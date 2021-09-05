@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            positive number
+        </title>
+        <script>
+            function check (){
+                var value = document.getElementById('data').value;
+               // var res = Math.sign(value);
+               if (value > 0)
+               {
+                   res = '${value} is positive number';
+               }
+               else if (value < 0 )
+                {
+                res = '${value} is negative number';
+               } 
+               else if (value == 0)
+               {
+                   res = '${value} is zero';
+               } 
+               else {
+                res = '${value} is not valid number';
+               }
+                document.getElementById('res').innerText=res;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input type="" name="" id="data">
+        <br>
+        <button onclick="check()"> Check </button>
+        
+    </body>
+</html>

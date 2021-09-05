@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+<title>
+    form
+</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container"> 
+        <h1 class="text-center text-warning" > content form </h1>
+
+
+        <div class="col-lg-8 m-auto d-block">
+
+<form action="">
+    <div class="form-group" >
+        <label for="user">username:</label>
+        <input type="text" name="username" id="usernames" class="form-control" autocomplete="off" >
+        <h5 id="usercheck" > </h5>
+    </div> 
+    <div class="form-group" >
+        <label for="user">password:</label>
+        <input type="text" name="password" id="password" class="form-control" autocomplete="off">
+        <h5 id="passcheck" > </h5>
+    </div>
+    <div class="form-group" >
+        <label for="user">Conpassword:</label>
+        <input type="text" name="Conpassword:" id="Conpassword:" class="form-control" autocomplete="off" >
+        <h5 id="Conpasscheck" >This is one belongs to Con password </h5>
+    </div>
+
+    <input type="submit" name="" id="submitbtn" value="Submit" class="btn btn-primary">
+</form>
+        </div>
+    </div>
+
+    <script type="text/jscript" >
+    $(document).ready(function(){
+
+$('#usercheck').hide();
+$('#passcheck').hide();
+$ ('#conpasscheck').hide();
+ 
+ var user_err = true;
+ var pass_err = true;
+ var conpass_err = true;
+
+ $('#usernames').keyup(function () {
+
+     username_check();
+     
+ });
+
+ function username_check() {
+
+     var user_val = $ ('#usernames').val();
+    //  alert (user_val);
+
+     if (user_val.length == '') {
+         $('#usercheck').show();
+         $('#usercheck').html("** please fill the username");
+         $('#usercheck').focus();
+         $('#usercheck').css();("color","red");
+         user_err = false;
+         return false;
+     } else {
+         
+        $('#usercheck').hide();
+ }
+ if ((user_val.length < 3) || (user_val.length > 10))
+  {
+$('#usercheck').show();
+$('#usercheck').html ("** user length must be in between 3 and 10 ");
+$('#usercheck').focus();
+$('#usercheck').css();("color","red");
+user_err = false;
+return false;
+} else
+ {
+
+$('#usercheck').hide();
+}
+$ ('password').keyup(function(){
+    password_check();
+});
+function password_check() {
+    var passwrdstr = $ ('#password').val ();
+
+    if (passwrdstr.length == '') 
+    {
+$('#passcheck').show();
+$('#passcheck').html("** please fill the password");
+$('#passcheck').focus();
+$('#passcheck').css();("color","red");
+pass_err = false;
+return false;
+}
+  else
+  {
+ $('#passcheck').hide ();
+ }
+ }  
+ });
+  </script>
+</body>
+
+<html>

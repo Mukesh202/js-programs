@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<!-- <h2> Right Tringle </h2> 
+<script type="text/javascript">
+for(m=1; m <=5; m++)
+{
+for(n=1; n<=m; n++)
+{
+document.write();
+if(n == m)
+continue;
+else
+document.write('');
+}
+document.write('<br>');
+}
+</script>
+</head>
+<body></body>
+</html> -->
+ <h2> pyramid </h2>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script type="text/javascript">
+var n=5;
+for(i=1;i<=n;i++)
+{
+ for (k=1;k<=(n-i);k++)
+ {
+     document.write ("&nbsp;");
+ }
+    for(j=1;j<=i;j++)
+    {
+document.write(" * ");
+    }
+    document.write ("<br>");
+}
+</script>
+</head>
+<body></body>
+</html> 
+
+<h2> Right Tringle </h2>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script type="text/javascript">
+var m,n,
+count = 5;
+for (m = 1; m <= count; m++)
+ {
+for (n = 1; n <= m; n++) 
+{
+document.write(""+m+"");
+}
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html> 
+
+<h2>pattern 5 </h2>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = 1; m < num; m++)
+ {
+for (n = 1; n <= m; n++)
+document.write(""+n+" ");
+document.write('<br/>');
+}
+for (m = num; m >= 0; m--) 
+{
+for (n = 1; n <= m; n++)
+document.write(""+n+" ");
+document.write('<br/>');
+}
+document.write('<br/>');
+</script>
+</head>
+<body></body>
+</html>
+
+<h3>  pattern 6</h3>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = num; m >= 0; m--) 
+{
+for (n = 1; n <= m; n++)
+document.write(""+n+" ");
+document.write('<br/>');
+}
+for (m = 1; m <= num; m++) 
+{
+for (n = 1; n <= m; n++)
+document.write(""+n+" ");
+document.write('<br/>');
+}
+document.write('<br/>');
+
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 7 </h3>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var num, p, q, m, n;
+num = 5;
+for (m = 1; m <= num; m++) {
+if (m % 2 == 0) {
+p = 1;
+q = 0;
+} else {
+p = 0;
+q = 1;
+}
+for (n = 1; n <= m; n++)
+if (n % 2 == 0)
+document.write(""+p+" ");
+else
+document.write(""+q+" ");
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 8 </h3>
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var rows, m, n, num = 1;
+rows = 5;
+for (m = 1; m <= rows; m++) {
+for (n = 1; n <= m; n++)
+document.write( num++ );
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 9 </h3>
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var i = 6;
+while (i >= 1)
+ {
+var j = 5;
+while (j >= i)
+ {
+document.write("" +j+ " ");
+j--;
+}
+i--;
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 10 </h3>
+
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var m,n,k;
+for(m=1;m<=4;m++)
+{
+for(n=4;n>=(m-1)*2-1;n--)
+document.write(" ");
+document.write(m);
+for(n=2;n<=(m-1)*4;n++)
+document.write(" ");
+if(m>1)
+document.write(m);
+document.write("<br/>");
+}
+for(m=3;m>=1;m--)
+{
+for(n=4;n>=(m-1)*2-1;n--)
+document.write(" ");
+document.write(m);
+for(n=2;n<=(m-1)*4;n++)
+document.write(" ");
+if(m>1)
+document.write(m);
+document.write("<br/>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 11 </h3>
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var m,n,k;
+for(m=4;m>=1;m--)
+{
+for(n=1;n<=4;n++)
+{
+if(n<=m)
+document.write(n);
+else
+document.write(" ");
+}
+for(n=4;n>=1;n--)
+{
+if(n<=m)
+document.write(n);
+else
+document.write(" ");
+}
+document.write("<br/>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 12 </h3>
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var m,n,k;
+k=1;
+for(m=1;m<=5;m+=2)
+{
+for(n=5;n>=1;n--)
+{
+if(n>m)
+document.write(" ");
+else
+document.write(k++);
+}
+document.write("<br/>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 13 </h3>
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var i,j;
+for(i=1;i<=4;i++)
+{
+for(j=1;j<=i;j++)
+document.write(j);
+for(j=i-1;j>=1;j--)
+document.write(j);
+document.write("<br/>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> pattern 14 </h3>
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var i,j;
+for(i=1;i<=4;i++)
+{
+for(j=1;j<=i;j++)
+document.write(j);
+for(j=i-1;j>=1;j--)
+document.write(j);
+document.write("<br/>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the program and you will get the below output:
+
+JavaScript Number Patterns 2
+Program 15
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var i,j,k;
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=5;j++)
+{
+if(j<=i)
+document.write(j);
+else
+document.write(" ");
+}
+for(j=5;j>=1;j--)
+{
+if(j<=i)
+document.write(j);
+else
+document.write(" ");
+}
+document.write("<br/>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Program 16
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var m,n,k;
+for (m=1;m<=5;m++)
+{
+for(k=m;k>1;k--)
+document.write(k);
+for(n=1;n<=6-m;n++)
+document.write(n);
+document.write("</br>");
+}
+</script>
+</head>
+<body></body>
+</html>
+
+<h3> program 17</h3>
+
+Star Patterns
+Program 1
+
+<html>
+<head>
+<title>JavaScript Star Patterns</title>
+<script type="text/javascript">
+var m,n;
+for(m=1; m <= 5; m++)
+{
+for(n=1; n<=m; n++)
+{
+document.write('*');
+}
+document.write('<br />');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the program and you will get the below output:
+
+Star 1
+Program 2
+
+<html>
+<head>
+<title>JavaScript Star Patterns</title>
+<script>
+var m, n;
+for(m=5;m>=1;m--)
+{
+for(n=1;n<=m;n++)
+{
+document.write('*');
+}
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the program and you will get the below output:
+
+Star 2
+Program 3
+
+<html>
+<head>
+<title>JavaScript Number Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = 1; m < num; m++) {
+for (n = 1; n <= m; n++)
+document.write(" * ");
+document.write('<br/>');
+}
+for (m = num; m >= 0; m--) {
+for (n = 1; n <= m; n++)
+document.write(" * ");
+document.write('<br/>');
+}
+document.write('<br/>');
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output as shown below:
+
+Star 3
+Program 4
+
+<html>
+<head>
+<title>JavaScript Star Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = num; m >= 0; m--) {
+for (n = 1; n <= m; n++)
+document.write(" * ");
+document.write('<br/>');
+}
+for (m = 1; m <= num; m++) {
+for (n = 1; n <= m; n++)
+document.write(" * ");
+document.write('<br/>');
+}
+document.write('<br/>');
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output as shown below:
+
+Star 4
+Program 5
+
+<html>
+<head>
+<title>JavaScript Star Patterns</title>
+<script>
+var i, j, k;
+var n = 5;
+for (i = 1; i <= n; i++) {
+for (j = 1; j <= i; ++j)
+document.write(j);
+for (k = n - i; k >= 1; k--)
+document.write("*");
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output as shown below:
+
+Star 5
+Program 6
+
+<html>
+<head>
+<title>JavaScript Star Patterns</title>
+<script>
+function pyramid(n) {
+for(var i=1; i<= n; i++){
+var myval = ' '.repeat(n-i);
+var myval1 = '*'. repeat(i*2 -1)
+console.log(myval + myval1 + myval);
+}
+}
+pyramid(5);
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output in the console as shown in the below image:
+
+Star 6
+3. Character Patterns
+Program 1
+
+<html>
+<head>
+<title>JavaScript Character Patterns</title>
+<script type="text/javascript">
+var m,n;
+for(m=1; m <= 5; m++)
+{
+for(n=1; n<=m; n++)
+{
+document.write('A');
+}
+document.write('<br />');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the program and you will get the below output:
+
+Character 1
+Program 2
+
+<html>
+<head>
+<title>JavaScript Character Patterns</title>
+<script>
+var m,n;
+for(m=5;m>=1;m--)
+{
+for(n=1;n<=m;n++)
+{
+document.write('A');
+}
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output as shown below:
+
+Character 2
+Program 3
+
+<html>
+<head>
+<title>JavaScript Character Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = 1; m < num; m++) {
+for (n = 1; n <= m; n++)
+document.write(" # ");
+document.write('<br/>');
+}
+for (m = num; m >= 0; m--) {
+for (n = 1; n <= m; n++)
+document.write(" & ");
+document.write('<br/>');
+}
+document.write('<br/>');
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the program and you will get the below output:
+
+Character 3
+Program 4
+
+<html>
+<head>
+<title>JavaScript Character Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = 1; m < num; m++) {
+for (n = 1; n <= m; n++)
+document.write("$");
+document.write('<br/>');
+}
+for (m = num; m >= 0; m--) {
+for (n = 1; n <= m; n++)
+document.write("#");
+document.write('<br/>');
+}
+document.write('<br/>');
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output as shown below:
+
+Character 4
+Program 5
+
+<html>
+<head>
+<title>JavaScript Character Patterns</title>
+<script>
+var num = 5;
+var m, n;
+for (m = num; m >= 0; m--) {
+for (n = 1; n <= m; n++)
+document.write("A");
+document.write('<br/>');
+}
+for (m = 1; m <= num; m++) {
+for (n = 1; n <= m; n++)
+document.write("B");
+document.write('<br/>');
+}
+document.write('<br/>');
+</script>
+</head>
+<body></body>
+</html>
+
+Execute the above code and you will get the output as shown below:
+
+Character 5
+Program 6
+
+<html>
+<head>
+<title>JavaScript Character Patterns</title>
+<script>
+var i, j, k;
+var n = 5;
+for (i = 1; i <= n; i++) {
+for (j = 1; j <= i; ++j)
+document.write(j);
+for (k = n - i; k >= 1; k--)
+document.write("$");
+document.write('<br/>');
+}
+</script>
+</head>
+<body></body>
+</html>
